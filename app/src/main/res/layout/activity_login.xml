@@ -10,8 +10,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/backgroundtop" />
+        android:layout_height="200dp"
+        android:background="@drawable/backgroundtop" >
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="30sp"
+            android:textColor="#FFF"
+            android:textStyle="bold"/>
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
@@ -20,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
         app:cardCornerRadius="10dp">
 
         <LinearLayout
@@ -38,6 +47,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/username"
                 android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 app:errorEnabled="true">
@@ -51,15 +61,20 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/Password"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 app:errorEnabled="true"
+
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:password="true"
+                    android:inputType="textPassword"
                     android:drawableStart="@drawable/ic_https_black_24dp"
                     android:hint="Password" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -73,11 +88,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/card"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <Button
+            android:layout_marginVertical="20dp"
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,19 +101,20 @@
             android:layout_marginHorizontal="25dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/button"
+            android:background="@drawable/buttongreen"
             android:text="Login"
             android:textColor="#FFF" />
 
         <Button
+            android:id="@+id/daftar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginHorizontal="25dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/button"
-            android:text="Login"
+            android:background="@drawable/buttongreen"
+            android:text="Daftar"
             android:textColor="#FFF" />
     </LinearLayout>
 

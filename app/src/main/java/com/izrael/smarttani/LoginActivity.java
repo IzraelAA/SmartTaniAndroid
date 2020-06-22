@@ -18,6 +18,7 @@ Button Login;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this,DashboarActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
             }
         });

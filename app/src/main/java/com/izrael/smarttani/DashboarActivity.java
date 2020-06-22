@@ -20,6 +20,7 @@ CircleImageView monitoring;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DashboarActivity.this,MonitoringActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
             }
         });
